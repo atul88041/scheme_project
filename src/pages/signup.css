@@ -1,0 +1,128 @@
+body{
+    background: #a8ecd2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbeee5, #cbf7e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #acf5d6, #d1ece0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.myHeading {
+    color: #000000;
+    font-size: 40px;
+    margin-top: -5%;
+    font-weight: bold;
+    font-family: YourPreferredFont, sans-serif; /* Change YourPreferredFont to the desired font */
+}   
+.content{
+    /* margin-left: 83%; */
+    /* margin-right: -15%; */
+    margin-top: -66%;
+    /* margin-bottom: -90%; */
+}
+
+.form{
+    background-color: rgb(205, 243, 216);
+    border-radius: 5px;
+    width: 550px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    margin-left: 20px;
+    /* height: 600px; */
+}
+
+.email{
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+.username{
+    font-size: 20px;
+}
+
+.userename-input {
+    width: 208px; 
+    height: 25px;
+    margin-left: 20px;
+  }
+  
+.email-input{
+    width: 210px; 
+    height: 25px; 
+    margin-left: 25px;
+}
+
+.phone{
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+.phone-input{
+    width: 210px; 
+    height: 25px;
+    margin-left: 20px;
+}
+
+.gender{
+    font-size: 20px;  
+    padding-top: 2%; 
+}
+
+.state{
+    font-size: 20px;  
+    padding-top: 2%; 
+}
+
+.district{
+    font-size: 20px;   
+    padding-top: 2%;
+}
+.district-input{
+    width: 212px; 
+    height: 25px;
+    margin-left: 88px;
+}
+
+.password{
+    font-size: 20px;   
+    padding-top: 2%;
+    width: 220;
+}
+
+.password-input{
+    margin-left: 155px; 
+    margin-bottom: -2%;
+    margin-top: -20px;
+}
+
+.two{
+    margin-left: 155px; 
+    margin-bottom: -2%;
+    margin-top: -20px;
+}
+
+
+.password2{
+    font-size: 20px;   
+    padding-top: 2%;
+}
+
+
+.form-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-body > *{
+    padding: 5px;
+}
+
+.form__label{
+    width: 40%;
+}
+
+.form_input{
+    width: 60%;
+}
+
+.footer{
+    text-align: center;
+}

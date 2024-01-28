@@ -4,6 +4,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
+import SignnUp from "./pages/signup";
+import SignIn from "./pages/signin";
+
+
 function App() {
   return (
     <div>
@@ -13,6 +17,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/signup" element={<SignnUp />} />
+          <Route path="/signin" element={<SignIn />} />
           <Route path="*" element={<Pagenotfound />} />
         </Routes>
       </BrowserRouter>
