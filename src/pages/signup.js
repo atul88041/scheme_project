@@ -89,8 +89,8 @@ function SignnUp() {
               <form onSubmit={handleSubmit}>
                 
             
-              <div className="username">
-                  <label className="form__label" htmlFor="username">Enter Full Name </label>
+              <div className="username" style= {{marginTop: "12px"}}>
+                  <label className="form__label" for="username">Enter Full Name </label>
                   <input
                    className="form__input userename-input" 
                    type="text" 
@@ -139,7 +139,7 @@ function SignnUp() {
                   onChange={(event) => setGender(event.target.value)}
                   name="gender"
                   id="gender"
-                  style={{ marginLeft: "96px",  width: "210px", height: "25px" }}
+                  style={{ marginLeft: "105px",  width: "210px", height: "25px" }}
                   required
                 >
                   <option value="">Select Gender</option>
@@ -158,7 +158,7 @@ function SignnUp() {
                   onChange={(event) => setState(event.target.value)}
                   name="state"
                   id="state"
-                  style={{ marginLeft: "113px",  width: "210px", height: "25px" }}
+                  style={{ marginLeft: "122px",  width: "210px", height: "25px" }}
                   required
                 >
                   <option value="">Select State</option>
@@ -192,11 +192,12 @@ function SignnUp() {
                     // className="form__input password-input"
                     id="password1"
                     placeholder="Enter Your password"
+                    style={{ width: '213px', height: '25px' }}
                     required
                   />
                   <div
                     className="showpass1"
-                    style={{ marginLeft: "140px",marginTop: "-18px" }}
+                    style={{ marginLeft: "215px",marginTop: "-25px" }}
                     onClick={() => setPassShow(!passShow)}
                   >
                     {!passShow ? "Show" : "Hide"}
@@ -206,7 +207,7 @@ function SignnUp() {
 
            
               <div className="password2" style={{ marginTop: "1%"}}>
-              <label className="password1" for="password">Confirm Password</label>
+              <label className="password1" for="password">Confirm Pass</label>
                 <div className="two">
                   <input
                     value={password2}
@@ -215,11 +216,12 @@ function SignnUp() {
                     name="cpassword"
                     id="password"
                     placeholder="Confirm password"
+                    style={{ width: '213px', height: '25px' }}
                     required
                   />
                   <div
                     className="showpass1" 
-                    style={{ marginLeft: "140px",marginTop: "-18px" }}
+                    style={{ marginLeft: "215px",marginTop: "-23px" }}
                     onClick={() => setCPassShow(!cpassShow)}
                   >
                     {!cpassShow ? "Show" : "Hide"}
@@ -239,7 +241,7 @@ function SignnUp() {
                 style={{
                   marginLeft: "-19px",
                   display: 'flex',
-                  marginTop: "40px",
+                  marginTop: "22px",
                   padding: "3%",
                   fontWeight: "bold"
                   // height: "55%",
@@ -252,6 +254,7 @@ function SignnUp() {
               <Link to="/signin"
               href="#" 
               variant="body2"
+              className="btn btn-dark"
               >
                 {"Already have an account? Sign In"}
               </Link>
@@ -261,7 +264,7 @@ function SignnUp() {
             <div className="content">
             <div
               style={{
-                marginTop: "-70px", marginLeft: "690px", marginRight: "-500px"
+                marginTop: "-146px", marginLeft: "690px", marginRight: "-500px"
               }}
             >
               <img
