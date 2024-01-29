@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -8,22 +9,58 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import Layout from "./../components/Layout/Layout";
+
 
 export default function SignIn() {
-  const handleSubmit = (event) => {
+
+  // State variables for user information
+  const [accessToken, setAccessToken] = useState(null); // Add this line
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
+
+    try {
+      const result = await axios.post("http://localhost:7000/api/users/login", {
+        identifier: data.get("email"),
+        password: data.get("password"),
+      });
+
+      console.log(result);
+
+      if (result.data && result.data.error) {
+        alert(`Login failed: ${result.data.error}`);
+      } else {
+        // Store the access token in state
+        setAccessToken(result.data.accessToken);
+        alert("Logged in successfully!");
+        // Redirect or perform any other actions on successful login
+        // For example, redirecting to the home page
+        navigate('/');
+      }
+    } catch (error) {
+      console.error(error);
+      if (error.response && error.response.data) {
+        console.log(error.response.data);
+      }
+      alert("Login failed. Please try again.");
+    }
   };
 
+    // You can use 'accessToken' wherever you need it in your component
+    console.log("Access Token:", accessToken);
+
   return (
+    <Layout>
     <Container component="main" maxWidth="xs">
       <Box
         sx={{  
-          marginTop: 8,
+          marginTop: 5,
+          marginBottom: 10,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -83,6 +120,7 @@ export default function SignIn() {
         </Box>
       </Box>
     </Container>
+    </Layout>
   );
 }
 
