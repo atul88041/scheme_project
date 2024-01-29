@@ -105,9 +105,13 @@ const Header = () => {
             <Stack direction="row" spacing={47} alignItems="center" justifyContent="center">
               <Stack>
                 <TextField
-                  label="Search"
+                  label="Enter scheme name to search..."
                   id="search"
                   // sx={{ borderRadius:"10px" }}
+                  sx={{
+                    borderRadius: "10px", // Add border-radius for rounded corners
+                    width: "300px", // Set the width to your desired value
+                  }}
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end">

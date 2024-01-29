@@ -20,7 +20,101 @@ import image11 from "../../images/Transport.svg";
 import image12 from "../../images/Travel.svg";
 import image13 from "../../images/Utility.svg";
 import image14 from "../../images/Women.svg";
+import { Grid } from "@mui/material";
 
+
+const schemeData = [
+  {
+    "image": image,
+    "schemeCount": 195,
+    "name": "Agriculture, Rural & Environment",
+    "subtitle": "195 Scheme"
+  },
+  {
+    "image": image1,
+    "schemeCount": 116,
+    "name": "Banking, Financial Services and Insurance",
+    "subtitle": "116 Scheme"
+  },
+  {
+    "image": image2,
+    "schemeCount": 174,
+    "name": "Business & Entrepreneurship",
+    "subtitle": "174 Scheme"
+  },
+  {
+    "image": image3,
+    "schemeCount": 427,
+    "name": "Education & Learning",
+    "subtitle": "427 Scheme"
+  },
+  {
+    "image": image4,
+    "schemeCount": 101,
+    "name": "Health & Wellness",
+    "subtitle": "101 Scheme"
+  },
+  {
+    "image": image5,
+    "schemeCount": 36,
+    "name": "Housing & Shelter",
+    "subtitle": "36 Scheme"
+  },
+  {
+    "image": image6,
+    "schemeCount": 7,
+    "name": "Public Safety, Law & Justice",
+    "subtitle": "7 Scheme"
+  },
+  {
+    "image": image7,
+    "schemeCount": 49,
+    "name": "Science, IT & Communications",
+    "subtitle": "49 Scheme"
+  },
+  {
+    "image": image8,
+    "schemeCount": 109,
+    "name": "Skills & Employment",
+    "subtitle": "109 Scheme"
+  },
+  {
+    "image": image9,
+    "schemeCount": 568,
+    "name": "Social Welfare & Empowerment",
+    "subtitle": "568 Scheme"
+  },
+  {
+    "image": image10,
+    "schemeCount": 68,
+    "name": "Sports & Culture",
+    "subtitle": "68 Scheme"
+  },
+  {
+    "image": image11,
+    "schemeCount": 27,
+    "name": "Transport & Infrastructure",
+    "subtitle": "27 Scheme"
+  },
+  {
+    "image": image12,
+    "schemeCount": 16,
+    "name": "Travel & Tourism",
+    "subtitle": "16 Scheme"
+  },
+  {
+    "image": image13,
+    "schemeCount": 29,
+    "name": "Utility & Sanitation",
+    "subtitle": "29 Scheme"
+  },
+  {
+    "image": image14,
+    "schemeCount": 182,
+    "name": "Women and Child",
+    "subtitle": "182 Scheme"
+  }
+]
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -91,171 +185,26 @@ export default function SchemeTabs() {
               <Typography textAlign="center" variant="h5">
                 Find schemes based on categories
               </Typography>
-              <Stack direction="row" spacing={3}>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">195 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Agriculture,Rural & Environment
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image1}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">116 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Banking,Financial Services and Insurance
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image2}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">174 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Business & Entrepreneurship
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image3}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">427 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Education & Learning
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image4}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">101 Scheme</Typography>
-                  <Typography variant="subtitle2">Health & Wellness</Typography>
-                </Stack>
-              </Stack>
-              <br />
-              <Stack direction="row" spacing={3}>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image5}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">36 Scheme</Typography>
-                  <Typography variant="subtitle2">Housing & Shelter</Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image6}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">7 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Public Safety,Law & Justice
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image7}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">49 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Science, IT & Communications
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image8}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">109 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Skills & Employment
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image9}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">568 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Social welfare & Empowerment
-                  </Typography>
-                </Stack>
-              </Stack>
-              <br />
-              <Stack direction="row" spacing={3}>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image10}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">68 Scheme</Typography>
-                  <Typography variant="subtitle2">Sports & Culture</Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image11}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">27 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Transport & Infrastructure
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image12}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">16 Scheme</Typography>
-                  <Typography variant="subtitle2">Travel & Tourism</Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image13}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">29 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Utility & Sanitation
-                  </Typography>
-                </Stack>
-                <Stack maxWidth={200}>
-                  <img
-                    style={{ height: "50px", width: "50px" }}
-                    src={image14}
-                    alt="logo"
-                  />
-                  <Typography variant="subtitle1">182 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Women and Child
-                    </Typography>
-                </Stack>
-              </Stack>
+          <Grid spacing={2} container mt={2} >
+            
+         
+            {schemeData.map((scheme, index) => (
+        <Grid key={index} item md={3} xs={6} p={2} sx={{display:"flex",justifyContent:"center"}}>
+          <Stack maxWidth={200}>
+            <img
+              style={{   height: "50px",
+              width: "50px",
+              display: "block",
+              margin: "auto", }}
+              src={scheme.image}
+              alt="logo"
+            />
+            <Typography textAlign='center' variant="subtitle1">{scheme.subtitle}</Typography>
+            <Typography textAlign='center' variant="subtitle2">{scheme.name}</Typography>
+          </Stack>
+            </Grid>
+            ))}
+          </Grid>
             </Box>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
