@@ -85,49 +85,53 @@ export default function SchemeTabs() {
             </Tabs>
           </Box>
         </Stack>
+
         <Stack>
+
           <CustomTabPanel value={value} index={0}>
             <Box>
-              <Typography textAlign="center" variant="h5">
-                Find schemes based on categories
+              
+              <Typography textAlign="center" variant="h5" fontWeight="bold" marginBottom="50px">
+               Explore a variety of government schemes for you
               </Typography>
-              <Stack direction="row" spacing={3}>
+
+              <Stack direction="row" spacing={5} marginLeft= "50px">
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "30px"}}
                     src={image}
                     alt="logo"
                   />
                   <Typography variant="subtitle1">195 Scheme</Typography>
                   <Typography variant="subtitle2">
-                    Agriculture,Rural & Environment
+                    Agriculture,Rural <br />& Environment
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "22px"}}
                     src={image1}
                     alt="logo"
                   />
                   <Typography variant="subtitle1">116 Scheme</Typography>
                   <Typography variant="subtitle2">
-                    Banking,Financial Services and Insurance
+                    Banking,Financial <br />Services <br />and Insurance
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "21px" }}
                     src={image2}
                     alt="logo"
                   />
                   <Typography variant="subtitle1">174 Scheme</Typography>
                   <Typography variant="subtitle2">
-                    Business & Entrepreneurship
+                    Business & <br />Entrepreneurship
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "17px" }}
                     src={image3}
                     alt="logo"
                   />
@@ -138,7 +142,7 @@ export default function SchemeTabs() {
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "20px" }}
                     src={image4}
                     alt="logo"
                   />
@@ -146,67 +150,69 @@ export default function SchemeTabs() {
                   <Typography variant="subtitle2">Health & Wellness</Typography>
                 </Stack>
               </Stack>
+
               <br />
-              <Stack direction="row" spacing={3}>
+              <Stack direction="row" spacing={9} marginLeft= "50px" marginTop="20px">
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "10px" }}
                     src={image5}
                     alt="logo"
                   />
                   <Typography variant="subtitle1">36 Scheme</Typography>
                   <Typography variant="subtitle2">Housing & Shelter</Typography>
                 </Stack>
-                <Stack maxWidth={200}>
+                <Stack maxWidth={200} >
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-30px" }}
                     src={image6}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">7 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Public Safety,Law & Justice
+                  <Typography variant="subtitle1" marginLeft="-36px">7 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft="-36px">
+                    Public Safety, <br />Law & Justice
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "6px" }}
                     src={image7}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">49 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Science, IT & Communications
+                  <Typography variant="subtitle1" marginLeft= "-10px">49 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-10px">
+                    Science, IT <br />& Communications
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-22px" }}
                     src={image8}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">109 Scheme</Typography>
-                  <Typography variant="subtitle2">
+                  <Typography variant="subtitle1" marginLeft= "-40px">109 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-40px">
                     Skills & Employment
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-25px" }}
                     src={image9}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">568 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Social welfare & Empowerment
+                  <Typography variant="subtitle1" marginLeft= "-35px">568 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-35px">
+                    Social welfare<br /> & Empowerment
                   </Typography>
                 </Stack>
               </Stack>
+
               <br />
-              <Stack direction="row" spacing={3}>
+              <Stack direction="row" spacing={13} marginLeft= "50px" marginTop= "35px">
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "17px" }}
                     src={image10}
                     alt="logo"
                   />
@@ -215,43 +221,43 @@ export default function SchemeTabs() {
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-45px" }}
                     src={image11}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">27 Scheme</Typography>
-                  <Typography variant="subtitle2">
-                    Transport & Infrastructure
+                  <Typography variant="subtitle1" marginLeft= "-60px">27 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-60px">
+                    Transport &<br /> Infrastructure
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-25px" }}
                     src={image12}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">16 Scheme</Typography>
-                  <Typography variant="subtitle2">Travel & Tourism</Typography>
+                  <Typography variant="subtitle1" marginLeft= "-37px">16 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-37px">Travel & Tourism</Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-41px" }}
                     src={image13}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">29 Scheme</Typography>
-                  <Typography variant="subtitle2">
+                  <Typography variant="subtitle1" marginLeft= "-57px">29 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-57px">
                     Utility & Sanitation
                   </Typography>
                 </Stack>
                 <Stack maxWidth={200}>
                   <img
-                    style={{ height: "50px", width: "50px" }}
+                    style={{ height: "50px", width: "50px", marginLeft: "-30px" }}
                     src={image14}
                     alt="logo"
                   />
-                  <Typography variant="subtitle1">182 Scheme</Typography>
-                  <Typography variant="subtitle2">
+                  <Typography variant="subtitle1" marginLeft= "-50px">182 Scheme</Typography>
+                  <Typography variant="subtitle2" marginLeft= "-50px">
                     Women and Child
                     </Typography>
                 </Stack>

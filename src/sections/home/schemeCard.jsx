@@ -17,10 +17,10 @@ export default function SchemeCard() {
             m: 1,
             width: "auto",
             height: 128,
-          },
+          },  
         }}
       >
-        <Paper sx={{ p: 4, bgcolor: "#e6f8eb", borderRadius: 5 }}>
+        <Paper sx={{ p: 4, bgcolor: "#eefcfb", borderRadius: 5 }}>
           <Typography textAlign="center" variant="h4">
             1470 +
           </Typography>
