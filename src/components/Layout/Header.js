@@ -16,9 +16,14 @@ import Logo from "../../images/logo_bihar.png";
 import SearchIcon from "@mui/icons-material/Search";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import MenuIcon from "@mui/icons-material/Menu";
-import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+import { Link } from "react-router-dom";
+
+
+
 const Header = () => {
+
+
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
   const handleDrawerToggle = () => {
@@ -47,15 +52,17 @@ const Header = () => {
       </Button>
     </Box>
   );
+
+
   return (
     <>
       <Box>
         <AppBar
           component={"nav"}
           sx={{
-            bgcolor: "rgb(230,248,235)",
-            background:
-              " linear-gradient(90deg, rgba(230,248,235,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%)",
+            bgcolor: "rgb(229,255,233)",
+            // background:
+            //   " linear-gradient(90deg, rgba(230,248,235,1) 0%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%)",
           }}
         >
           <Toolbar>
@@ -91,9 +98,11 @@ const Header = () => {
                 width="60"
                 style={{ marginRight: "10px" }}
               />
-              myScheme
+              <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+               myScheme
+              </Link>
             </Typography>
-            <Stack direction="row" spacing={4} alignItems="center">
+            <Stack direction="row" spacing={47} alignItems="center" justifyContent="center">
               <Stack>
                 <TextField
                   label="Enter scheme name to search..."
@@ -125,8 +134,11 @@ const Header = () => {
                     variant="contained"
                     color="success"
                     endIcon={<DoubleArrowIcon />}
+                    style={{ color: "white" }}
                   >
+                    <Link to='/signup' style={{ textDecoration: 'none', color: 'inherit' }}>
                     Sign in
+                    </Link>
                   </Button>
                 </Box>
               </Stack>
