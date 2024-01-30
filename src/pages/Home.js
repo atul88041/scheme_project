@@ -9,6 +9,8 @@ import SchemeCard from "../sections/home/schemeCard";
 import SchemeTabs from "../sections/home/categoryTab";
 import HowItWorks from "../sections/home/HowItWorks";
 import HowToApplyCard from "../sections/home/HowToApplyCard";
+import AboutHome from "../sections/home/AboutHome";
+
 
 
 
@@ -21,6 +23,8 @@ const Home = () => {
       <SchemeTabs />
       <HowItWorks/> 
       <HowToApplyCard/>
+      <AboutHome/>
+     
       {/* <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
           <h1>Food Website</h1>
