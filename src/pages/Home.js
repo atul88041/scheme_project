@@ -7,6 +7,8 @@ import { Carousel } from "../sections/home/Carousel";
 import SchemeForYou from "../sections/home/schemeForYou";
 import SchemeCard from "../sections/home/schemeCard";
 import SchemeTabs from "../sections/home/categoryTab";
+import HowItWorks from "../sections/home/how it works";
+import AboutHome from "../sections/home/abouthome";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <SchemeForYou />
       <SchemeCard />
       <SchemeTabs />
+      <HowItWorks />
+      <AboutHome />
       {/* <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
           <h1>Food Website</h1>
