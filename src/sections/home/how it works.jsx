@@ -3,7 +3,6 @@ import Paper from "@mui/material/Paper";
 // import Layout from "./../components/Layout/Layout";
 // import Container from "@mui/material/Container";
 import { Box, Typography, Container, Button, Stack } from "@mui/material";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 
 const HowItWorks = () => {
   

@@ -1,7 +1,6 @@
 .Main {
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
-   
     margin-top: 6rem;
 }
 
@@ -16,12 +15,13 @@
 }
 
 .one {
-    grid-column: span 6;
+    grid-column: span 7;
     margin-top: -1rem;
     margin-left: 4rem;
 }
 
-.two {
-    margin-top: 3rem;
-    padding-right: 3rem;
+.video-container {
+    margin-left: 15rem;
+    margin-top: -2rem;
+    padding-right: 1rem;
 }

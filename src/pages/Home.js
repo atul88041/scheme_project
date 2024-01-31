@@ -9,6 +9,7 @@ import SchemeCard from "../sections/home/schemeCard";
 import SchemeTabs from "../sections/home/categoryTab";
 import HowItWorks from "../sections/home/how it works";
 import AboutHome from "../sections/home/abouthome";
+import FAQHOME from "../sections/home/faqhome";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <SchemeTabs />
       <HowItWorks />
       <AboutHome />
+      <FAQHOME />
       {/* <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
           <h1>Food Website</h1>
