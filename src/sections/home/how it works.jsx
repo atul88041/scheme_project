@@ -47,7 +47,7 @@ const HowItWorks = () => {
             borderRadius: 17,
             transition: "background-color 0.1s ease", // Add transition property
             "&:hover": {
-              bgcolor: "#dafff6", // Change background color on hover
+              bgcolor: "#b9cee9", // Change background color on hover
             },
           }}
         >          
@@ -67,7 +67,7 @@ const HowItWorks = () => {
           top: '50%',
           width: '20px',
           height: '20px',
-          background: '#45f8a8',
+          background: '#a1f0d0',
           border: '2px solid #000',
           borderTop: '0',
           borderRight: '0',

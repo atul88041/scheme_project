@@ -244,8 +244,6 @@ function SignnUp() {
                   marginTop: "22px",
                   padding: "3%",
                   fontWeight: "bold"
-                  // height: "55%",
-                  // width: "50%"
                 }}
               >
                 Submit
