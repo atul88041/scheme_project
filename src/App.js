@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
 import SignnUp from "./pages/signup";
 import SignIn from "./pages/signin";
+import FAQ from "./sections/home/faq";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/signup" element={<SignnUp />} />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/faq" element={<FAQ />}  />
           <Route path="*" element={<Pagenotfound />} />
         </Routes>
       </BrowserRouter>

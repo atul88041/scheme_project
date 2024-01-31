@@ -2,10 +2,10 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import { alpha } from "@mui/material/styles";
+// import { alpha } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-import IconButton from "@mui/material/IconButton";
+// import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
 // import { paths } from "src/routes/paths";
@@ -25,7 +25,7 @@ const LINKS = [
     children: [
       { name: "About us", href: "/" },
       { name: "Contact us", href: "/" },
-      { name: "FAQs", href: "/" },
+      { name: "FAQs", href: "/faq" },
     ],
   },
   {

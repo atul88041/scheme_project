@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import image1 from "../../images/Bihar-Kushal-Yuva-Program.webp";
-import image2 from "../../images//bimar-aaksmik-fasal-yojna0.webp";
+import image2 from "../../images/bimar-aaksmik-fasal-yojna0.webp";
 import image3 from "../../images/village.png";
 import "./Carousel.css";
+
 const data = [
   {
     src: image1,
@@ -18,16 +19,25 @@ const data = [
     alt: "Image 3 for carousel",
   },
 ];
+
 export const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    setSlide((prevSlide) => (prevSlide === data.length - 1 ? 0 : prevSlide + 1));
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    setSlide((prevSlide) => (prevSlide === 0 ? data.length - 1 : prevSlide - 1));
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 3000); // Change 3000 to the desired interval in milliseconds
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
   return (
     <div className="carousel">
